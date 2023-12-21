@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="main.css ">
+    <title>Scrolling webseit</title>
+</head>
+<body>
+    
+    <header>
+        <a href="#" class="logo">LOGO</a>
+        <ul>
+            <li>
+                <a href="#" class="active">Home</a>
+                <a href="#">Work</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>                
+            </li>
+        </ul>
+    </header>
+
+    <section>
+        <img src="img/stars.png" alt="starts" id="stars">
+        <img src="img/moon.png" alt="moon" id="moon">
+        <img src="img/mountains_behind.png" alt="moun1" id="moun1">
+        <h2 id="text"> MoonLight</h2>
+        <a href="#" class="btn" id="btn">Explore</a>
+        <img src="img/mountains_front.png" alt="moun2" id="moun2">
+
+    </section>
+
+    <div class="sec" id="sec">
+        <h2>MOON LIGHT</h2>
+        <p>
+            Moonlight refers to the light that is produced by the Moon when its surface reflects sunlight. The Moon itself does not emit light; instead, it acts as a natural satellite that reflects the light it receives from the Sun. The amount of moonlight visible from Earth depends on the Moon's phase, which is determined by its position relative to the Earth and the Sun.
+<br> <br>
+During a full moon, the side of the Moon facing Earth is fully illuminated by the Sun, creating the most intense and bright moonlight. In contrast, during a new moon, the side facing Earth is in shadow, and the Moon appears dark.
+<br> <br>
+Moonlight has been a source of inspiration in various aspects of human culture, including literature, art, and folklore. It is often associated with romantic scenes, mystery, and tranquility. The soft and silvery glow of moonlight can create a unique and enchanting atmosphere, influencing the mood and aesthetics of the night.
+<br> <br>
+From a scientific perspective, the Moon's surface reflects sunlight due to its lack of an internal light source. The varying phases of the Moon, such as crescent, quarter, gibbous, and full moon, result from the changing positions of the Earth, Moon, and Sun in relation to each other. Each phase presents a different amount of illuminated surface visible from Earth, affecting the intensity of moonlight observed.
+<br> <br>
+Moonlight has also played a role in timekeeping and cultural practices. In some traditions, moon phases are used to mark lunar months and festivals. Additionally, the brightness of the Moon can impact activities such as stargazing and nocturnal wildlife behavior.
+<br><br>
+Overall, moonlight is a captivating and integral part of the Earth's night sky, influencing cultural, artistic, and scientific aspects of human experience
+<br><br>
+Overall, moonlight is a captivating and integral part of the Earth's night sky, influencing cultural, artistic, and scientific aspects of human experience
+         
+</p>
+    </div>
+
+    <script>
+        let stars = document.getElementById('stars');
+        let moon = document.getElementById('moon');
+        let moun1 = document.getElementById('moun1');
+        let text = document.getElementById('text');
+        let btn = document.getElementById('btn');
+        let moun2 = document.getElementById('moun2');
+        let header = document.querySelector('header');
+     window.addEventListener('scroll', function()
+     {
+        let value = window.scrollY;
+        stars.style.left = value * 0.25 + 'px';
+        moon.style.top = value * 1.05 + 'px';
+        moun1.style.top = value * 0.5 + 'px';
+        moun2.style.top = value * 0 + 'px';
+        text.style.marginRight = value * 4 + 'px';
+        text.style.marginTop = value * 1.5 + 'px';
+        btn .style.marginTop = value * 1.5 + 'px';
+         header.style.top = value * 0.5 + 'px';
+     })
+
+    </script>
+</body>
+</html>
