@@ -23,7 +23,7 @@ nav
 {
     position: fixed;
     top: 0;
-    left: 0;
+    left: 0;        
     width: 100%;
     padding: 15px 8%;
     display: flex;
@@ -111,83 +111,20 @@ nav a {
   }
   
 
+/* Space */
+
+.space
+{
+   min-width: 100%;
+    height:100%;
+   
+}
+
+img
+{
+    width: 100%;
+    height: 70%;
+}
 
 
 /* aboutpage */
-.about
-{
-    width: 100%;
-    min-height: 100vh;
-    background:linear-gradient(to right, #094282, #6d00ff 70%, #6d00ff 70%);
-    color: #fff;
-    padding: 10px 0;
-    position: relative;
-}
-
-section {
-    max-width: 900px;
-    margin: 2em auto;
-    padding: 1em;
-    background:linear-gradient(to right, #094282, #6d00ff 70%, #6d00ff 70%);
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    
-}
-.section1{
-    margin-top: 10%;
-    margin-left: 10%;
-}
-.section2{
-    margin-top: 5%;
-    margin-left: 10%;
-}
-.section3{
-    margin-top: 5%;
-    margin-left: 10%;
-}
-h2 {
-    color: #333;
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-li {
-    margin-bottom: 0.5em;
-}
-/* ----contactpage----- */
-
-
-/* Your existing styles here */
-
-@media only screen and (max-width: 600px) {
-    /* Adjust styles for smaller screens or mobile devices */
-
-    .hero {
-        min-height: 50vh;
-    }
-
-    nav {
-        padding: 15px 5%;
-    }
-
-    .text-box {
-        margin-top: 10%;
-        margin-left: 5%;
-    }
-
-    .img {
-        width: 200px;
-        right: 5%;
-        top: 10%;
-    }
-
-    .slidebar {
-        display: none; /* Hide the slidebar on smaller screens */
-    }
-
-    /* Add more adjustments as needed for other elements */
-}
-
